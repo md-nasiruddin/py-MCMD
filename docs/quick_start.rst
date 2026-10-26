@@ -91,8 +91,8 @@ In the dry-run working copy:
 
 .. code-block:: bash
 
-   python py_mcmd_refactored/cli/main.py \
-       -f gemc_10cycles.json \
+   python -m py_mcmd.cli.main \
+       -f user_input_NAMD_GOMC.json \
        --dry_run
 
 Inspect the generated inputs and
@@ -113,13 +113,7 @@ locations:
 
 .. code-block:: bash
 
-   python py_mcmd_refactored/cli/main.py -f gemc_10cycles.json
-
-The JSON execution order is honored without an additional CLI flag.
-NAMD uses ``required_data/config_files/namd/gemc_liquid.conf`` for box 0
-and ``required_data/config_files/namd/gemc_gas.conf`` for box 1.
-GOMC then updates both boxes using
-``required_data/config_files/gomc/gemc.conf``.
+   python -m py_mcmd.cli.main -f user_input_NAMD_GOMC.json
 
 The run log should contain ``All cycles completed.``. Inspect the
 engine logs, continuity reports, and combined data before interpreting
