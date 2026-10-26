@@ -10,7 +10,7 @@ import numpy as np
 import pandas as pd
 import scipy as sp
 
-from py_mcmd_refactored.utils.config_sections import flatten_config_sections
+from py_mcmd.utils.config_sections import flatten_config_sections
 
 # combines the data from the MD/MC simulations (NAMD/GOMC) for the NPT, NVT, GEMC, and GCMC ensembles
 # or just combines the log files for the NAMD-only or GOMC-only simulations.

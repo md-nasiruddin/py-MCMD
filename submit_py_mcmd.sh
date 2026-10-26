@@ -20,5 +20,5 @@ export PY_MCMD_MANAGED_OUTPUT_ROOT=/tmp/py_mcmd_${SLURM_JOB_ID}
 mkdir -p "$PY_MCMD_MANAGED_OUTPUT_ROOT"
 
 echo "Starting py-MCMD $(date)"
-python -m py_mcmd_refactored.cli.main -f user_input_NAMD_GOMC.json
+python -m py_mcmd.cli.main -f user_input_NAMD_GOMC.json
 echo "Ending py-MCMD $(date)"

@@ -27,8 +27,8 @@
   },
 
   "engines": {
-    "namd2_bin_directory": "/home6/ia5498/NAMD_2.14_Linux-x86_64-multicore",
-    "gomc_bin_directory": "/home6/ia5498/GOMC/GOMC_dev/bin"
+    "namd2_bin_directory": "../NAMD_2.14_Linux-x86_64-multicore",
+    "gomc_bin_directory": "../GOMC/bin"
   },
 
   "force_fields": {
